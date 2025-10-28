@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Ambulance Booking System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🚑 Ambulance Booking System</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="booking.html">Book Ambulance</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="signin.html">Sign In</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-info">
+      <h2>📞 Contact Us</h2>
+      <p><strong>Emergency Hotline:</strong> 999</p>
+      <p><strong>Email:</strong> help@ambulancebd.com</p>
+      <p><strong>Address:</strong> 123 Health Street, Dhaka, Bangladesh</p>
+    </section>
+
+    <section class="feedback-form">
+      <h2>📝 Send Feedback</h2>
+      <form id="feedbackForm">
+        <label for="fname">Full Name:</label>
+
+        <input type="text" id="fname" required>
+        
+        <br><br>
+
+        <label for="femail">Email:</label>
+
+        <input type="email" id="femail" required><br><br>
+
+        <label for="fmessage">Message:</label><span></span>
+
+       </span></span> <textarea id="fmessage" rows="1" required ></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ambulance Booking System | Emergency Hotline: 999</p>
+  </footer>
+
+  <script>
+    document.getElementById("feedbackForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      alert("✅ Thank you for your feedback! We’ll get back to you soon.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>

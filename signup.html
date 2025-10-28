@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Ambulance Booking System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🚑 Ambulance Booking System</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="booking.html">Book Ambulance</a>
+      <a href="contact.html">Contact</a>
+      <a href="signup.html" class="active">Sign Up</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="auth-form">
+      <h2>🧾 Create an Account</h2>
+      <form id="signupForm">
+        <label for="signupName">Full Name:</label>
+        <input type="text" id="signupName" required>
+
+        <label for="signupEmail">Email:</label>
+        <input type="email" id="signupEmail" required>
+
+        <label for="signupPassword">Password:</label>
+        <input type="password" id="signupPassword" required>
+
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <p>Already have an account? <a href="signin.html">Sign In</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ambulance Booking System | Emergency Hotline: 999</p>
+  </footer>
+
+  <script src="auth.js"></script>
+</body>
+</html>
