@@ -18,7 +18,7 @@
   </header>
 
   <main>
-    <section class="booking-form">
+    <section class="auth-form">
       <h2>Book an Ambulance</h2>
       <form id="ambulanceForm">
         <label for="name">Full Name:</label>
@@ -30,14 +30,21 @@
         <label for="location">Location:</label>
         <input type="text" id="location" required>
 
-        <label for="emergency">Emergency Type:</label>
-        <select id="emergency" required>
+        <label for="Patient Age">Patient Age:</label>
+        <input type="text" id="Patient Age" required>
+
+
+        <label for="emergency">Emergency Type: </label>
+        <input type="text" id="emergency" required>
+        <select class="auth-form" id="emergency" required>
           <option value="">Select Emergency</option>
           <option value="Accident">Accident</option>
           <option value="Heart Attack">Heart Attack</option>
           <option value="Pregnancy">Pregnancy</option>
           <option value="Other">Other</option>
         </select>
+        
+        
 
         <button type="submit">Book Now</button>
       </form>
@@ -51,6 +58,8 @@
             <th>Name</th>
             <th>Phone</th>
             <th>Location</th>
+            <th>Patient Age</th>
+            <th> Emergency type</th>
             <th>Emergency</th>
           </tr>
         </thead>
@@ -58,8 +67,20 @@
       </table>
     </section>
   </main>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 
   <footer>
+    
     <p>Ambulance Booking System | Emergency Hotline: 999</p>
   </footer>
 
